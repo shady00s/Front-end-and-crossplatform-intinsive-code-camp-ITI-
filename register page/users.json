@@ -1,0 +1,19 @@
+[
+    {
+        "id":12,
+        "userName":"shady",
+        "email":"shady12@ElMallClient.com",
+        "password":"2323ssdadw",
+        "type":"client",
+        "category":null
+    },
+    {
+        "id":13,
+        "userName":"shady",
+        "email":"shady12@ElMallSeller.com",
+        "password":"2323ssdadw",
+        "type":"client",
+        "category":"electronics"
+    }
+   
+]
