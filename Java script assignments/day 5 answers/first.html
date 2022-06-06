@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Your name</h1>
+    <input type="text" name="name" id="name" />
+    <h1>Email</h1>
+    <input type="email" name="email" id="email" />
+    <h1>Gender</h1>
+    <div class="gender" style="display: flex;">
+      <div class="male">
+        <img src="./1.jpg" alt="" style="width:30px;" />
+        <input type="radio" name="gender" id=""  value="1.jpg"/>
+      </div>
+      <div class="fmale">
+        <img src="./2.jpg" alt="" style="width: 60px;" />
+        <input type="radio" name="gender" id="" value="2.jpg" />
+      </div>
+    </div>
+    <button onclick="submitBtn()">regester</button>
+    <!-- AJAX and JSON -->
+    <h1>band</h1>
+    <select name="band" id="b1">
+      <option disabled>Band name</option>
+    </select>
+    <h1>artist</h1>
+
+    <select name="artist" id="a1">
+      <option disabled> Artist name</option>
+    </select>
+
+
+
+    <section>
+      <h1>log-in</h1>
+
+      <form action="localResult.html" id="subWithLocal">
+        <label for="name">name</label>
+        <input type="text" name="name" id="name1">
+        <br>
+        <label for="pass">pass</label>
+        <input type="password" name="pass" id="pass1">
+        <br>
+        <input type="checkbox" name="checkbox" id="checkbox">
+        
+        <label for="checkbox">remember me</label>
+        <br>
+        <input onclick="savingToLocal()" type="submit" value="submit">
+      </form>
+    </section>
+    <script src="./logic.js"></script>
+    <script src="./cookieLib.js"></script>
+  </body>
+</html>
