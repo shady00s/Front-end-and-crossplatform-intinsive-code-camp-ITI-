@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./nav-bar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>My mall | home</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#" onclick="showCatWithData()">Categories</a>
+            </li>
+            <li>
+                <a href="#">New items</a>
+            </li>
+            <li>
+
+                    <div onclick="openProfilePopup()"" class="profileShape">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Shady</span>
+                    </div>
+                    
+                    
+                </div>
+                
+
+            </li>
+        </ul>
+        <div class="windowsHeightIndex">
+            <div class="progressBar"></div>
+        </div>
+<!-- Categories container -->
+        <div class="categoriesContainer">
+            <ul class="categoriesUL">
+            </ul>
+        </div>
+
+        <!-- profile popup container -->
+    </nav>
+    <div id="cont" class="profileBody" >
+        <span onclick="closeProfilePopup()" style="position: absolute; top:3%; right: 4%; cursor: pointer;"><i   class="fa-solid fa-xmark"></i></span>
+        <div class="personInfo">
+            <img src="./avatar.png" alt="">
+            <span>shady safwat</span>
+        </div>
+        <div class="cartInfo">
+            <span style="font-size: 14px;color:#4e4e4e"><i style="margin: 0.2rem;" class="fa-solid fa-cart-shopping"></i> Cart items: <span>2</span></span>
+        </div>
+
+
+        <button onclick="logOutConfirm()" >Log-out</button> 
+    </div>
+ 
+    <script src="./navbar-logic.js"></script>
+</body>
+</html>
